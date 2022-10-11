@@ -77,7 +77,7 @@ app.get("/",(req,res)=>{
                 </thead>
                 <tbody>`);
     let j=1;
-    con.query(`SELECT * FROM LIBROS`,(err,result)=>{
+    con.query(`SELECT * FROM libros`,(err,result)=>{
         result.map((element)=>{
             res.write(`
                 <tr>
